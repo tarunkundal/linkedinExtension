@@ -1,4 +1,4 @@
-import  { GenerateIconButton } from 'assets';
+import { GenerateButtonIcon, InsertButtonIcon, RegenerateButtonIcon } from 'assets';
 import React, { useState } from 'react';
 
 interface ModalProps {
@@ -35,11 +35,12 @@ const Modal: React.FC<ModalProps> = ({ show, onClose }) => {
           className="border p-2 w-full mb-2"
         />
         <button onClick={generateResponse} className="bg-blue-500 text-white px-4 py-2 rounded">
-<GenerateIconButton />
+<GenerateButtonIcon />
             </button>
         <p className="mt-2">{response}</p>
-        <button onClick={insertResponse} className="bg-green-500 text-white px-4 py-2 rounded mt-2">Insert</button>
-        <button onClick={onClose} className="bg-red-500 text-white px-4 py-2 rounded mt-2">Close</button>
+        <button onClick={insertResponse} className="bg-green-500 text-white px-4 py-2 rounded mt-2">
+            <InsertButtonIcon/></button>
+        <button onClick={()=>null } className="bg-red-500 text-white px-4 py-2 rounded mt-2"><RegenerateButtonIcon /></button>
       </div>
     </div>
   );

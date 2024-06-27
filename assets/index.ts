@@ -1,7 +1,10 @@
 // assets/index.js
-import { ReactComponent as GenerateIconButton } from './generate.svg'
+import { ReactComponent as GenerateButtonIcon } from './generate.svg'
+import { ReactComponent as InsertButtonIcon } from './insert.svg'
+import { ReactComponent as RegenerateButtonIcon } from './insert.svg'
 
 export {
-  GenerateIconButton,
-  // add other icons here
+  GenerateButtonIcon,
+  InsertButtonIcon,
+  RegenerateButtonIcon
 };
