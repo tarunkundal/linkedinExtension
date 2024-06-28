@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Modal from './Modal'
+import Modal from './Modal';
+import { GenerateButtonIcon } from 'assets';
 
-const CountButton = () => {
+const MainFeature = () => {
   const [showModal, setShowModal] = useState(true);
   const [inputFocused, setInputFocused] = useState(false);
 
@@ -48,11 +49,12 @@ const CountButton = () => {
         >
           AI
           <img src="../../assets/icon.png" alt="AI icon" />
+          {/* <GenerateButtonIcon /> */}
         </div>
       )}
-      {showModal && <Modal show={showModal} onClose={() => setShowModal(false)} />}
+     <Modal show={showModal} onClose={() => setShowModal(false)} />
     </>
   );
 };
 
-export default CountButton;
+export default MainFeature;
